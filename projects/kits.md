@@ -172,6 +172,6 @@ flowchart LR
 
 ```
 
-[:back:](../README.md)
+# [:back:](../README.md)
 
 [^package]: Revisar módulo de paquetes en Odoo

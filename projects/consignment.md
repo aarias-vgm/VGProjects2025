@@ -174,4 +174,4 @@ flowchart TD
 | 8235    | Consignment goods offsetting entry | :heavy_check_mark: |                    |
 | 2205    | Suppliers (formal obligation)      |                    | :heavy_check_mark: |
 
-[:back:](../README.md)
+# [:back:](../README.md)
