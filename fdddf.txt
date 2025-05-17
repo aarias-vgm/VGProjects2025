@@ -1,0 +1,3 @@
+["&", "&", ("invoice_date", ">=", "2025-01-01"), ("invoice_date", "<=", "2025-05-13"), "&", ("move_id.state", "=", "posted"), "&", ("account_id.account_type", "=", "income"), "&", ("move_id.journal_id.type", "=", "sale"), "&", ("name", "ilike", "PEROSSAL"), "|", "|", "|", "|", ("move_id.user_id", "=", False), ("move_id.user_id.employee_ids.id", "=", 19), ("move_id.user_id.job_title", "ilike", "KEY ACCOUNT MANAGER"), ("move_id.user_id.job_title", "ilike", "COORDIANDOR(A) REGIONAL DE COLUMNA Y LIDER NACIONAL DE COLUMNA"), ("move_id.user_id.employee_ids.active", "=", True)]
+
+-2.111.596.615,00

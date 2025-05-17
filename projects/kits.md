@@ -16,38 +16,38 @@ title: KIT CLASS DIAGRAM
   }
 }%%
 classDiagram
-   class KitTemplate {
+   class SetTemplate {
       +Many2One~Product~ product
-      +One2Many~KitQuantity~ quantities
-      +One2Many~Kit~ kits
+      +One2Many~SetLine~ quantities
+      +One2Many~Set~ setLines
       +createKit(inventoryQuantities) kit
    }
 
-   class KitQuantity {
+   class SetLine {
       +int quantity
       +Product product
       +bool isRequired
       +bool isReusable
    }
 
-   class Kit {
+   class Set {
       +string id
       +KitStatus status
       +Many2Many~Lot~ lots
    }
 
-   class KitStatus {
+   class SetStatus {
    <<enum>>
    +READY
    +NOT_READY
    }
 
-   KitTemplate "1" --> "*" KitQuantity : quantities
-   KitTemplate "1" --> "*" Kit : kits
-   Kit --> KitStatus
+   SetTemplate "1" --> "*" SetLine : quantities
+   SetTemplate "1" --> "*" Set : sets
+   Set --> SetStatus
 
-   note for KitTemplate "class mrp.bom"
-   note for KitQuantity "class mrp.bom.line"
+   note for SetTemplate "class mrp.bom"
+   note for SetQuantity "class mrp.bom.line"
 ```
 
 ## Set up
